@@ -4,12 +4,14 @@ staff_items:
     lore:
       - "&7Right-Click to teleport to random player."
     material: COMPASS
+    durability: 0
     slot: 0
   freeze:
     name: "&bFreeze"
     lore:
       - "&7Right-Click to freeze a player."
     material: ICE
+    durability: 0
     slot: 1
   VISIBILITY_ON:
     name: "&bVisibility &7(&aON&7)"

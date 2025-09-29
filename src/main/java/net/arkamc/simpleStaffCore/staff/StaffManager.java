@@ -1,15 +1,20 @@
 package net.arkamc.simpleStaffCore.staff;
 
+import java.util.List;
 import net.arkamc.simpleStaffCore.SimpleStaffCore;
 import net.arkamc.simpleStaffCore.profile.Profile;
 import net.arkamc.simpleStaffCore.profile.ProfileManager;
 import net.arkamc.simpleStaffCore.util.BasicConfigFile;
+import net.arkamc.simpleStaffCore.util.ItemBuilder;
 import net.arkamc.simpleStaffCore.util.VisibilityUtil;
+import org.bukkit.Material;
+import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
 
 public class StaffManager {
 
     private static final BasicConfigFile langFile = SimpleStaffCore.getInstance().getLangFile();
+    private static final BasicConfigFile staffItemsFile = SimpleStaffCore.getInstance().getStaffItemsFile();
 
     public static void toggleStaffMode(Player player) {
         ProfileManager profileManager = SimpleStaffCore.getInstance().getProfileManager();
@@ -26,9 +31,23 @@ public class StaffManager {
 
             // Clear player's inventory
             player.getInventory().clear();
-            player.getInventory().setItem(0, StaffItems.RANDOM_TELEPORT);
-            player.getInventory().setItem(1, StaffItems.FREEZE);
-            player.getInventory().setItem(8, StaffItems.VISIBILITY_ON);
+
+            for (final String key : staffItemsFile.getConfigurationSection("staff_items").getKeys(false)) {
+                final ConfigurationSection section = staffItemsFile.getConfigurationSection("staff_items." + key);
+                if (section != null) {
+                    final String name = section.getString("name");
+                    final List<String> lore = section.getStringList("lore");
+                    final Material material = Material.getMaterial(section.getString("material"));
+                    final int slot = section.getInt("slot");
+                    final int durability = section.getInt("durability");
+
+                    player.getInventory().setItem(slot, new ItemBuilder(material)
+                            .name(name)
+                            .lore(lore)
+                            .durability(durability)
+                            .build());
+                }
+            }
 
             player.setAllowFlight(true);
             player.setFlying(true);
