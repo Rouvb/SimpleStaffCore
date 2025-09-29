@@ -21,5 +21,5 @@ A lightweight and easy-to-use **Staff Core Plugin** for Minecraft Servers.
 - `/vanish`
 - `/staffchat`, `/sc`
 ## Credits
-- GUI Library - [triumph-gui](https://github.com/TriumphTeam/triumph-gui)
-- Command Framework - [spigot-command-api](https://github.com/ashtton/spigot-command-api)
+- **GUI Library** – [triumph-gui](https://github.com/TriumphTeam/triumph-gui)
+- **Command Framework** – [spigot-command-api](https://github.com/ashtton/spigot-command-api)
