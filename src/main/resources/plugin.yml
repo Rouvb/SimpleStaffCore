@@ -1,5 +1,5 @@
 name: SimpleStaffCore
-version: '1.0.1-SNAPSHOT'
+version: '1.0.2-SNAPSHOT'
 main: net.arkamc.simpleStaffCore.SimpleStaffCore
 api-version: '1.8.8'
 author: 'Rouvb'

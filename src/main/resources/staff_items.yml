@@ -13,17 +13,17 @@ staff_items:
     material: ICE
     durability: 0
     slot: 1
-  VISIBILITY_ON:
+  visibility_on:
     name: "&bVisibility &7(&aON&7)"
     lore:
       - "&7Right-Click to disappear from online players."
-    material: DYE
+    material: INK_SACK
     durability: 10
     slot: 8
-  VISIBILITY_OFF:
+  visibility_off:
     name: "&bVisibility &7(&cOFF&7)"
     lore:
       - "&7Right-Click to show yourself to online players."
-    material: DYE
+    material: INK_SACK
     durability: 8
     slot: 8

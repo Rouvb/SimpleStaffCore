@@ -20,7 +20,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class StaffItemListener implements Listener {
 
-    private static final BasicConfigFile lang = SimpleStaffCore.getInstance().getLangFile();
+    private static final BasicConfigFile langFile = SimpleStaffCore.getInstance().getLangFile();
 
     @EventHandler(priority = EventPriority.LOW)
     public void onInteract(PlayerInteractEvent event) {
@@ -36,8 +36,7 @@ public class StaffItemListener implements Listener {
         }
         if (item.isSimilar(StaffItems.RANDOM_TELEPORT)) {
             randomTeleport(player);
-        }
-        else if (item.isSimilar(StaffItems.VISIBILITY_ON)) {
+        } else if (item.isSimilar(StaffItems.VISIBILITY_ON)) {
             toggleVisibility(player);
             player.getInventory().setItem(8, StaffItems.VISIBILITY_OFF);
         } else if (item.isSimilar(StaffItems.VISIBILITY_OFF)) {
@@ -69,7 +68,7 @@ public class StaffItemListener implements Listener {
                 .collect(Collectors.toList());
 
         if (onlinePlayers.isEmpty()) {
-            player.sendMessage(lang.getString("random_teleport.player_not_found"));
+            player.sendMessage(langFile.getString("random_teleport.player_not_found"));
             return;
         }
 
@@ -77,7 +76,7 @@ public class StaffItemListener implements Listener {
         int rantInt = rand.nextInt(onlinePlayers.size());
 
         player.teleport(onlinePlayers.get(rantInt));
-        player.sendMessage(lang.getString("random_teleport.teleported"));
+        player.sendMessage(langFile.getString("random_teleport.teleported"));
     }
 
     private void toggleVisibility(Player player) {
