@@ -10,11 +10,13 @@ A lightweight and easy-to-use **Staff Core Plugin** for Minecraft Servers.
 ## Permissions
 - `simplestaffcore.freeze`
 - `simplestaffcore.staff`
+- `simplestaffcore.admin`
 - `simplestaffcore.staffchat`
 - `simplestaffcore.report`
 - `simplestaffcore.vanish`
 ## Commands
 - `/staff`, `/staffmode`, `/mod`, `/modmode` 
+- `/staff reload`
 - `/report <player>`
 - `/vanish`
 - `/staffchat`, `/sc`
