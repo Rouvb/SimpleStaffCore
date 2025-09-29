@@ -1,0 +1,33 @@
+freeze:
+  player_not_found: "&cThat player could not be found!"
+  cannot_yourself: "&cYou cannot freeze yourself!"
+  cannot_staff: "&cYou cannot freeze this player!"
+  frozen:
+    - "&cYou have been frozen by staff!"
+  staff_alert:
+    frozen: "&b[S] &3{staff} &bhas frozen &a{target}&b."
+    unfrozen: "&b[S] &3{staff} &bhas unfrozen &a{target}&b."
+    log_out: "&b[S] &a{target} &clogged out while frozen."
+random_teleport:
+  player_not_found: "&cThere are no players online."
+  teleported: "&aYou have been teleported to &f{target}&a!"
+report:
+  player_not_found: "&cThat player could not be found!"
+  cannot_yourself: "&cYou cannot report yourself!"
+  cannot_staff: "&cYou cannot report this player!"
+  cooldown: "&cYou must wait before submitting another report."
+  staff_alert: "&b[S] &a{reporter} &chas reported &a{reported} &cfor: &f{reason}&c."
+  reported: "&aYour report has been submitted successfully!"
+staff_chat:
+  cannot_staff_chat: "&cYou are not allowed to use staff chat."
+  enabled: "&aStaff chat has been enabled."
+  disabled: "&cStaff chat has been disabled."
+  message: "&b[S] &3{player}&7: &b{message}"
+staff_mode:
+  cannot_staff_mode: "&cYou are not allowed to use staff mode."
+  enabled: "&aStaff mode has been enabled."
+  disabled: "&cStaff mode has been disabled."
+vanish:
+  cannot_vanish: "&cYou are not allowed to use vanish."
+  enabled: "&aYou are now vanished."
+  disabled: "&cYou are no longer vanished."

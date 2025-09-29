@@ -1,0 +1,6 @@
+name: SimpleStaffCore
+version: '1.0-SNAPSHOT'
+main: net.arkamc.simpleStaffCore.SimpleStaffCore
+api-version: '1.8.8'
+author: 'Rouvb'
+description: A Simple Staff Core Plugin

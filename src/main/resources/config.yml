@@ -1,0 +1,11 @@
+freeze:
+  task_interval: 3
+  sound: NOTE_PLING
+  prevent_freeze_staff: true
+  disconnect_action: "ban {player} Refuse Screen-share -s"
+report:
+  cooldown: 60
+  prevent_report_staff: true
+  webhook:
+    enabled: true
+    webhook_url: ""

@@ -1,0 +1,62 @@
+gui:
+  title: "&e&lReporting {player}"
+  rows: 3
+  background:
+    name: "&0"
+    material: "STAINED_GLASS_PANE"
+    durability: 15
+  items:
+    combat_hacks:
+      name: "&e&lCombat Hacks"
+      lore:
+        - "&7KillAura, Aimbot, etc"
+        - " "
+        - "&eClick to select!"
+      material: DIAMOND_SWORD
+      slot: 10
+      durability: 0
+    movement_hacks:
+      name: "&e&lMovement Hacks"
+      lore:
+        - "&7Speed, Fly, Anti KB, etc"
+        - " "
+        - "&eClick to select!"
+      material: FEATHER
+      slot: 11
+      durability: 0
+    other_hacks:
+      name: "&e&lOther Hacks"
+      lore:
+        - "&7Using any unfair advantages"
+        - " "
+        - "&eClick to select!"
+      material: BOOK_AND_QUILL
+      slot: 12
+      durability: 0
+    teaming:
+      name: "&e&lTeaming"
+      lore:
+        - "&7Teaming in a solo game"
+        - " "
+        - "&eClick to select!"
+      material: GOLD_AXE
+      slot: 13
+      durability: 0
+    running_or_camping:
+      name: "&e&lRunning/Camping"
+      lore:
+        - "&7Purposely stalling a game"
+        - " "
+        - "&eClick to select!"
+      material: LADDER
+      slot: 14
+      durability: 0
+    bad_name_or_skin:
+      name: "&e&lBad Bane/Skin"
+      lore:
+        - "&7Rule-breaking skin/username"
+        - " "
+        - "&eClick to select!"
+      material: DIRT
+      slot: 15
+      durability: 0

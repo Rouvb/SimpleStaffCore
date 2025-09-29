@@ -1,0 +1,27 @@
+staff_items:
+  random_teleport:
+    name: "&bRandom Teleport"
+    lore:
+      - "&7Right-Click to teleport to random player."
+    material: COMPASS
+    slot: 0
+  freeze:
+    name: "&bFreeze"
+    lore:
+      - "&7Right-Click to freeze a player."
+    material: ICE
+    slot: 1
+  VISIBILITY_ON:
+    name: "&bVisibility &7(&aON&7)"
+    lore:
+      - "&7Right-Click to disappear from online players."
+    material: DYE
+    durability: 10
+    slot: 8
+  VISIBILITY_OFF:
+    name: "&bVisibility &7(&cOFF&7)"
+    lore:
+      - "&7Right-Click to show yourself to online players."
+    material: DYE
+    durability: 8
+    slot: 8

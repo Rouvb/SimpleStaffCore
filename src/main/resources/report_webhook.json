@@ -1,0 +1,31 @@
+{
+  "report": {
+    "content": null,
+    "embeds": [
+      {
+        "title": "New Report!",
+        "color": 5814783,
+        "fields": [
+          {
+            "name": "Reported",
+            "value": "{reported}",
+            "inline": true
+          },
+          {
+            "name": "Reporter",
+            "value": "{reporter}",
+            "inline": true
+          },
+          {
+            "name": "Reason",
+            "value": "{reason}"
+          }
+        ],
+        "thumbnail": {
+          "url": "https://api.mineatar.io/face/{reported_uuid}"
+        }
+      }
+    ],
+    "attachments": []
+  }
+}
